@@ -2,74 +2,74 @@ from app import app, db, Vinyl
 
 sample_records = [
     {
-        'title': 'Abbey Road',
-        'artist': 'The Beatles',
-        'year': 1969,
-        'genre': 'Rock',
-        'condition': 'Near Mint'
-    },
-    {
-        'title': 'Thriller',
-        'artist': 'Michael Jackson',
-        'year': 1982,
-        'genre': 'Pop',
-        'condition': 'Very Good'
-    },
-    {
-        'title': 'Dark Side of the Moon',
-        'artist': 'Pink Floyd',
-        'year': 1973,
+        'title': 'I Let It In and It Took Everything',
+        'artist': 'Loathe',
+        'year': 2020,
         'genre': 'Rock',
         'condition': 'Mint'
     },
     {
-        'title': 'Kind of Blue',
-        'artist': 'Miles Davis',
-        'year': 1959,
-        'genre': 'Jazz',
+        'title': 'The Cold Sun',
+        'artist': 'Loathe',
+        'year': 2017,
+        'genre': 'Rock',
+        'condition': 'Near Mint'
+    },
+    {
+        'title': 'Take Me Back to Eden',
+        'artist': 'Sleep Token',
+        'year': 2023,
+        'genre': 'Rock',
+        'condition': 'Mint'
+    },
+    {
+        'title': 'This Place Will Become Your Tomb',
+        'artist': 'Sleep Token',
+        'year': 2021,
+        'genre': 'Rock',
+        'condition': 'Mint'
+    },
+    {
+        'title': 'Sundowning',
+        'artist': 'Sleep Token',
+        'year': 2019,
+        'genre': 'Rock',
+        'condition': 'Very Good'
+    },
+    {
+        'title': 'Nothing Left to Love',
+        'artist': 'Counterparts',
+        'year': 2019,
+        'genre': 'Rock',
+        'condition': 'Near Mint'
+    },
+    {
+        'title': 'You\'re Not You Anymore',
+        'artist': 'Counterparts',
+        'year': 2017,
+        'genre': 'Rock',
+        'condition': 'Very Good'
+    },
+    {
+        'title': 'Tragedy Will Find Us',
+        'artist': 'Counterparts',
+        'year': 2015,
+        'genre': 'Rock',
         'condition': 'Good'
     },
     {
-        'title': 'Rumours',
-        'artist': 'Fleetwood Mac',
-        'year': 1977,
-        'genre': 'Rock',
-        'condition': 'Very Good'
-    },
-    {
-        'title': 'Back in Black',
-        'artist': 'AC/DC',
-        'year': 1980,
-        'genre': 'Rock',
-        'condition': 'Near Mint'
-    },
-    {
-        'title': 'The Miseducation of Lauryn Hill',
-        'artist': 'Lauryn Hill',
-        'year': 1998,
-        'genre': 'Hip-Hop',
-        'condition': 'Mint'
-    },
-    {
-        'title': 'Blue Train',
-        'artist': 'John Coltrane',
-        'year': 1957,
-        'genre': 'Jazz',
-        'condition': 'Fair'
-    },
-    {
-        'title': 'Random Access Memories',
-        'artist': 'Daft Punk',
+        'title': 'The Difference Between Hell and Home',
+        'artist': 'Counterparts',
         'year': 2013,
-        'genre': 'Electronic',
-        'condition': 'Mint'
-    },
-    {
-        'title': 'Blonde on Blonde',
-        'artist': 'Bob Dylan',
-        'year': 1966,
         'genre': 'Rock',
         'condition': 'Good'
+    },
+    {
+        'title': 'The Current Will Carry Us',
+        'artist': 'Counterparts',
+        'year': 2011,
+        'genre': 'Rock',
+        'condition': 'Fair'
     }
 ]
 
