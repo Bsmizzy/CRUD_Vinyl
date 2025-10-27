@@ -53,20 +53,19 @@ def index():
             except ValueError:
                 flash('Year must be a valid number.', 'error')
     
-    search_query = request.args.get('search', '').strip()
+    q = request.args.get('search', '').strip()
     
-    if search_query:
+    if q:
+        search = f'%{q}%'
         vinyls = Vinyl.query.filter(
-            db.or_(
-                Vinyl.title.ilike(f'%{search_query}%'),
-                Vinyl.artist.ilike(f'%{search_query}%'),
-                Vinyl.genre.ilike(f'%{search_query}%')
-            )
+            db.or_(Vinyl.title.ilike(search), 
+                   Vinyl.artist.ilike(search), 
+                   Vinyl.genre.ilike(search))
         ).order_by(Vinyl.date_added.desc()).all()
     else:
         vinyls = Vinyl.query.order_by(Vinyl.date_added.desc()).all()
     
-    return render_template('index.html', vinyls=vinyls, search_query=search_query)
+    return render_template('index.html', vinyls=vinyls, search_query=q)
 
 
 @app.route('/update/<int:id>', methods=['GET', 'POST'])
