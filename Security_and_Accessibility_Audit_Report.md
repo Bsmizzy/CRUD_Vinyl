@@ -1,6 +1,6 @@
 # Security and Accessibility Audit Report
 
-Brandon Smith  
+Brent Smith 
 November 16, 2025  
 Vinyl Collection App
 
